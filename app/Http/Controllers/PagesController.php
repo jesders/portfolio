@@ -9,4 +9,8 @@ class PagesController extends Controller
     public function index() {
     	return view('index');
     }
+
+    public function modernfold() {
+    	return view('project.modernfold');
+    }
 }

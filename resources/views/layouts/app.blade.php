@@ -10,13 +10,13 @@
     <body>
         <main class="wrapper">
             {{-- Header Layout --}}
-            @include('layouts.header')
+            {{-- @include('layouts.header') --}}
 
             {{-- Page Content --}}
             @yield('content')
 
             {{-- Footer Layout --}}
-            @include('layouts.footer')
+            {{-- @include('layouts.footer') --}}
 
             {{-- Ind --}}
             @stack('script')

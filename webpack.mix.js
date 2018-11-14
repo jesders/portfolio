@@ -12,7 +12,7 @@ let mix = require('laravel-mix');
  */
 
 mix.fastSass('resources/assets/scss/app.scss', 'public/assets/css')
-   .js('resources/assets/js/app.js', 'public/assets/js')
+   // .js('resources/assets/js/app.js', 'public/assets/js')
    .browserSync({
        proxy: 'localhost:8000',
        files: [
@@ -21,5 +21,5 @@ mix.fastSass('resources/assets/scss/app.scss', 'public/assets/css')
            'resources/views/**/*',
            'resources/templates/**/*',
            'routes/**/*'
-    	]
+       ]
    });

@@ -12,3 +12,6 @@
 */
 
 Route::get('/', 'PagesController@index');
+
+//Project Routes
+Route::get('/modernfold', 'PagesController@modernfold');

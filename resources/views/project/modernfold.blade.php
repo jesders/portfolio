@@ -2,9 +2,10 @@
 
 @section('content')
 
-	<section class="page bg" style="background-image:url('/assets/img/Banner - Landing.jpg');">
+	{{-- TODO: Add 3 Sections w/Components and Slots. One For Desktop, Tablet, and Mobile --}}
+	<section class="page gradient">
 		<div class="block block-title">
-			<h1>Development</h1>
+			<h1>Modern<br>fold</h1>
 		</div>
 	</section>
 

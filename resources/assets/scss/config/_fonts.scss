@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'progesterone';
+    src: url('/assets/fonts/progesterone.eot');
+    src: url('/assets/fonts/progesterone.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/progesterone.woff2') format('woff2'),
+         url('/assets/fonts/progesterone.woff') format('woff'),
+         url('/assets/fonts/progesterone.svg#progesteroneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$__font--primary: 'progesterone';
