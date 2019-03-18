@@ -18,7 +18,7 @@
             {{-- Footer Layout --}}
             {{-- @include('layouts.footer') --}}
 
-            {{-- Ind --}}
+            {{-- Script Comment --}}
             @stack('script')
 
         </main>{{-- End Wrapper --}}
