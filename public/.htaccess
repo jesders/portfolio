@@ -19,8 +19,3 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
-
-#Force non-www:
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www.jesders.com [NC]
-RewriteRule ^(.*)$ https://jesders.com/$1 [L,R=301]
