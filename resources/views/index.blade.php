@@ -52,7 +52,7 @@
 	<script src="//cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
 
     <script>
-    	var date = new Date("06/01/19")
+    	var date = new Date("12/31/19")
 
 		var countDownDate = date.getTime();
 
