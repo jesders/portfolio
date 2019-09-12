@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+let mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +11,14 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+mix.fastSass('resources/assets/scss/app.scss', 'public/assets/css')
+   .browserSync({
+       proxy: 'localhost:8000',
+       files: [
+           'app/**/*',
+           'public/**/*',
+           'resources/views/**/*',
+           'resources/templates/**/*',
+           'routes/**/*'
+       ]
+   });

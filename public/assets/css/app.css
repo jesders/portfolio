@@ -1,0 +1,398 @@
+/*
+|--------------------------------------------------------------------------
+| Application
+|--------------------------------------------------------------------------
+|
+| This file should never change. These are strict SMACSS Standards. For
+| more information, please visit https://smacss.com/.
+| 
+| Note: EVERYTHING NEEDS COMMENTED. We should be using the following structure
+|       for all code:
+|
+|       .classname {
+|	    	@includes
+|           @extends
+|            selector styles
+|            psuedo classes
+|            psuedo elements   ( &::before / &::after )
+|            nested selectors  ( > h3 )
+|            nested classnames ( > .child )
+|       }
+|
+| Note: Great way to organize your CSS below:
+|        
+|       -Text
+|       -Color
+|       -Display and Box Model
+|       -Positioning
+|       -Other
+|
+| You should not be nesting more than 4 levels deep. If deeper than 4 levels, consider
+| restructing HTML.
+|
+| Never include vendor prefixes ( -webkit, -moz, -os, -ms ). Autoprefixer will handle.
+|
+|
+*/
+/* Imports
+---------------------------------------------------------------------------- */
+/*
+|--------------------------------------------------------------------------
+| Application
+|--------------------------------------------------------------------------
+|
+| This file should never change. These are strict SMACSS Standards. For
+| more information, please visit https://smacss.com/.
+| 
+| Note: EVERYTHING NEEDS COMMENTED. We should be using the following structure
+|       for all code:
+|
+|       .classname {
+|	    	@includes
+|           @extends
+|            selector styles
+|            psuedo classes
+|            psuedo elements   ( &::before / &::after )
+|            nested selectors  ( > h3 )
+|            nested classnames ( > .child )
+|       }
+|
+| Note: Great way to organize your CSS below:
+|        
+|       -Text
+|       -Color
+|       -Display and Box Model
+|       -Positioning
+|       -Other
+|
+| You should not be nesting more than 4 levels deep. If deeper than 4 levels, consider
+| restructing HTML.
+|
+| Never include vendor prefixes ( -webkit, -moz, -os, -ms ). Autoprefixer will handle.
+|
+|
+*/
+/* Imports
+---------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900");
+@font-face {
+  font-family: 'progesterone';
+  src: url("/assets/fonts/progesterone.eot");
+  src: url("/assets/fonts/progesterone.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/progesterone.woff2") format("woff2"), url("/assets/fonts/progesterone.woff") format("woff"), url("/assets/fonts/progesterone.svg#progesteroneregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Application
+|--------------------------------------------------------------------------
+|
+| This file should never change. These are strict SMACSS Standards. For
+| more information, please visit https://smacss.com/.
+| 
+| Note: EVERYTHING NEEDS COMMENTED. We should be using the following structure
+|       for all code:
+|
+|       .classname {
+|	    	@includes
+|           @extends
+|            selector styles
+|            psuedo classes
+|            psuedo elements   ( &::before / &::after )
+|            nested selectors  ( > h3 )
+|            nested classnames ( > .child )
+|       }
+|
+| Note: Great way to organize your CSS below:
+|        
+|       -Text
+|       -Color
+|       -Display and Box Model
+|       -Positioning
+|       -Other
+|
+| You should not be nesting more than 4 levels deep. If deeper than 4 levels, consider
+| restructing HTML.
+|
+| Never include vendor prefixes ( -webkit, -moz, -os, -ms ). Autoprefixer will handle.
+|
+|
+*/
+/* Imports
+---------------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Application
+|--------------------------------------------------------------------------
+|
+| This file should never change. These are strict SMACSS Standards. For
+| more information, please visit https://smacss.com/.
+| 
+| Note: EVERYTHING NEEDS COMMENTED. We should be using the following structure
+|       for all code:
+|
+|       .classname {
+|	    	@includes
+|           @extends
+|            selector styles
+|            psuedo classes
+|            psuedo elements   ( &::before / &::after )
+|            nested selectors  ( > h3 )
+|            nested classnames ( > .child )
+|       }
+|
+| Note: Great way to organize your CSS below:
+|        
+|       -Text
+|       -Color
+|       -Display and Box Model
+|       -Positioning
+|       -Other
+|
+| You should not be nesting more than 4 levels deep. If deeper than 4 levels, consider
+| restructing HTML.
+|
+| Never include vendor prefixes ( -webkit, -moz, -os, -ms ). Autoprefixer will handle.
+|
+|
+*/
+/* Imports
+---------------------------------------------------------------------------- */
+.countdown, .countdown .timer .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+* {
+  transition: all .20s ease-in-out;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Yantramanav";
+}
+
+body {
+  background: linear-gradient(45deg, #3700b3, #2f2963, #187795, #197bbd);
+  height: 100vh;
+  width: 100vw;
+  background-size: 250% 250%;
+  animation: moveGradient 15s ease infinite;
+}
+
+h1 {
+  color: #191a1a;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #888888;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.modal {
+  max-width: 750px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.wrap {
+  background-color: #fff;
+  position: relative;
+  padding: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    padding: 100px 50px;
+  }
+}
+
+.countdown {
+  margin-top: 25px;
+}
+
+.countdown .timer {
+  position: relative;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 667px) {
+  .countdown .timer {
+    margin-left: 10px;
+  }
+}
+
+.countdown .timer .box {
+  font-size: 24px;
+  padding: 25px;
+  width: 75px;
+  height: 75px;
+  border: 1px solid #f0f0f0;
+}
+
+@media screen and (max-width: 667px) {
+  .countdown .timer .box {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.countdown .timer .type {
+  font-weight: 500;
+  font-size: 14px;
+  color: #888888;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.countdown .timer:first-child {
+  margin-left: 0;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.social a {
+  display: block;
+  padding: 15px;
+  border-top: 1px solid transparent;
+}
+
+.social a:hover {
+  border-top: 1px solid #3700b3;
+}
+
+.social a:hover svg {
+  fill: #3700b3;
+}
+
+.social svg {
+  width: 18px;
+  height: 18px;
+  fill: #888888;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottoM: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.button-set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.button {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #3700b3;
+  background-color: #fff;
+  margin-left: 25px;
+  width: 150px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.button:first-child {
+  margin-left: 0;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #3700b3;
+}
